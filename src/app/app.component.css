@@ -1,0 +1,55 @@
+.navtop{
+    width:100%;
+}
+.singaporeDiv{
+    text-align: -webkit-center;
+}
+.singaporelogo {
+    width: 15px;
+    height: 15px;
+    
+}
+
+/* resize images */
+.singaporelogo img {
+    width: 100%;
+    height: auto;
+}
+.singaporetext{
+    font-size: 13px;
+}
+.LogoDiv{
+    text-align: -webkit-center;
+}
+.companylogo {
+    width: 121px;
+    height: 64px;
+    
+}
+
+/* resize images */
+.companylogo img {
+    width: 100%;
+    height: auto;
+}
+.LockDiv{
+    text-align: -webkit-center;
+}
+
+.lock {
+    width: 13px;
+   
+    
+}
+
+/* resize images */
+.lock img {
+    width: 100%;
+    height: auto;
+}
+.lockText{
+    font-size: 13px;
+}
+.GlobeText{
+    font-size: 10px;
+}

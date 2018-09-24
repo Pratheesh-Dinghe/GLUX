@@ -1,0 +1,30 @@
+
+
+
+/***************** PaginationBottom Start ******************/
+.pagination {
+  display: inline-block;
+  margin-left: 1200px;
+  margin-top: 2px;
+  margin-top: -25px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+/* .pagination a.active {
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+} */
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+/***************** PaginationBottom End ******************/

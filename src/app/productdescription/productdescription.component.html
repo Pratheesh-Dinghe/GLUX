@@ -1,0 +1,294 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<!-- <body onload="location.hash = 'infoPage';"> -->
+
+<body>
+  <!--***************** Product designs session start ******************-->
+  <div class="ProductDescription">
+    <div class="ProductDescrow" tabindex="1">
+      <div class="productDesccolumn">
+        <div class="productImage"><a href=""><img onmouseover="imageonclick(this.id, this.src,'idimgnew')" id="the_id"
+              src="../assets/image/img33.jpg"></a></div>
+        <!-- <div class="productImage"><a  href=""><img src="../assets/image/img34.jpg"></a></div> -->
+      </div>
+    </div>
+    <div class="ProductDescrow">
+      <div class="productDesccolumn">
+        <div class="productImage"><a href=""><img onmouseover="imageonclick(this.id, this.src,'idimgnew')" id="the_id"
+              src="../assets/image/img32.jpg"></a></div>
+        <!-- <div class="productImage"><a href=""><img src="../assets/image/img32.jpg"></a></div> -->
+      </div>
+    </div>
+    <div class="ProductDescrow">
+      <div class="productDesccolumn">
+        <div class="productImage"><a href=""><img onmouseover="imageonclick(this.id, this.src,'idimgnew')" id="the_id"
+              src="../assets/image/img34.jpg"></a></div>
+        <!-- <div class="productImage"><a href=""><img src="../assets/image/img33.jpg"></a></div> -->
+      </div>
+    </div>
+    <div class="ProductDescrow">
+      <div class="productDesccolumn">
+        <div class="productImage"><a href=""><img onmouseover="imageonclick(this.id, this.src,'idimgnew')" id="the_id"
+              src="../assets/image/img31.jpg"></a></div>
+        <!-- <div class="productImage"><a href=""><img src="../assets/image/img31.jpg"></a></div> -->
+      </div>
+    </div>
+    <div class="ProductDescrow">
+      <div class="productDesccolumn">
+        <div class="productImage"><a href=""><img onmouseover="imageonclick(this.id, this.src,'idimgnew')" id="the_id"
+              src="../assets/image/img35.jpg"></a></div>
+        <!-- <div class="productImage"><a href=""><img src="../assets/image/img35.jpg"></a></div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="highlightimage" id=idimgnew><img src="" class="img2"></div>
+  <!--***************** Product designs session end******************-->
+
+  <!--*****************  Product attributes start******************-->
+  <div class="productdetailssession" id="productdetailsID">
+    <div class="designername">
+      <p>GUCCI</p>
+    </div>
+    <div class="productname">The Grind Leather</div>
+    <div class="productprice">SGD 450</div>
+    <div class="productpriceold">SGD 900</div>
+
+    <div class="salesoffer">SALE 50% OFF</div>
+    <div class="Gpoints">G-Points-2</div>
+
+    <div class="circle">
+      <div class="circle-text">EU <br> 38</div>
+    </div>
+
+    <div class="circle1">
+      <div class="circle-text">EU <br> 40</div>
+    </div>
+    <div class="sizeguide"><a href="">View Size Guide</a></div>
+
+    <div class="addtoshoppingbag">
+      <button class="btnaddtoshoppingbag">ADD TO SHOPPING BAG</button>
+    </div>
+
+    <div class="divbtnstar">
+      <button type="button" class="btnstar">
+        <span class="glyphicon glyphicon-star-empty gray"></span>
+      </button>
+    </div>
+
+    <div class="setalert" id="ID"><a onclick='ShowAlert("ID")'>Set up an Alert</a></div>
+
+    <div class="offlinerequest"><a href="">
+        Requesting an offline private viewing
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a></div>
+    <div class="socialIcons">
+      <span><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+      <span><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+    </div>
+  </div>
+
+
+  <!--*****************  Product attributes end******************-->
+
+
+  <!--*****************  Product alert start ******************-->
+  <div class="divProdAlert" id="divAlertID">
+    <h6>PRODUCT ALERT</h6>
+    <p>Let us know what type and designer of products are interested in getting an email notification:</p>
+
+
+    <div class="divformalert">
+      <form>
+        <div class="row">
+          <div class="column1">
+            <label for="fname">Category</label>
+            <input type="text" id="fname" name="firstname" placeholder="">
+          </div>
+          <div class="column2">
+            <label for="fname">Colour</label>
+            <select>
+              <option value="saab">Black</option>
+              <option value="opel">White</option>
+              <option value="audi">Red</option>
+              <option value="audi">Blue<option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column1">
+            <label for="fname">Designer</label>
+
+            <select>
+              <option value="saab">3.1 Philip lim</option>
+              <option value="opel">Sophia WEbster</option>
+              <option value="audi">Abro</option>
+              <option value="audi">4Adore<option>
+            </select>
+
+          </div>
+          <div class="column2">
+            <label for="fname">Gender</label>
+            <select>
+              <option value="saab">Women</option>
+              <option value="opel">Men</option>
+              <option value="audi">Others</option>
+
+            </select>
+          </div>
+        </div>
+
+        <input type="submit" value="CREATE ALERT">
+        <input type="cancel" value="CANCEL">
+      </form>
+    </div>
+
+
+    <button type="button" class="close" aria-label="Close" onclick='ShowAlert("divAlertID")'>
+      <span aria-hidden="true">&times;</span>
+    </button>
+
+  </div>
+
+  <!--***************** Product alert end******************-->
+
+
+
+
+
+  <!--*****************  Product description start******************-->
+
+  <div class=productdetaileddescriptionsession>
+
+    <div class="proddetailstext">
+      <p>PRODUCT DETAILS</p>
+    </div>
+    <div class="itemcodetext">
+      <p>ItemCode:#SHSW1245</p>
+    </div>
+    <div class="gendertext">
+      <p>Gender:Women</p>
+    </div>
+
+    <div class="detailstext">
+      <p>Details</p>
+    </div>
+
+    <div class="detailscontent">
+      <!-- <fieldset id="fdstdetails"> -->
+
+      <ul>
+        <li>Material got leather</li>
+        <li>Internal details: fabric lining, internal zipped and slot pockets</li>
+        <li>Colour of fastening: silver</li>
+        <li>Detachable, Adjustable shoulder strap, Top handles</li>
+        <li>Zipped top</li>
+        <li>Made in Italy</li>
+        <li>Comes with dust bag, protective feet</li>
+        <li>Designer colour name: Bright Red</li>
+        <li>Brix and Bailey leathers are sourced from the best tanneries in Italy.</li>
+
+
+
+      </ul>
+      <!-- </fieldset> -->
+
+    </div>
+
+  </div>
+  <!--*****************  Product description end******************-->
+
+  <!--*****************  Shipping details start******************-->
+  <div class=shippingdetails>
+    <div class="shippingdetailstext">
+      <p>SHIPPING AND RETURNS</p>
+    </div>
+
+    <div class="divshippingtable">
+      <table class="shippingtable">
+
+        <tr>
+          <td>Estimated Delivery</td>
+          <td class="rightalign">Jul 30- Aug 3</td>
+        </tr>
+        <tr>
+          <td><a href="">Return policy</a></td>
+          <td class="rightalign">Returnable</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="shippingoptions">
+      <p>Find out <span><a href="">more</a></span> about our shipping options,<br>
+        including Self-Collect and Same-Day delivery</p>
+    </div>
+
+  </div>
+  <!--*****************  Shipping details end******************-->
+
+  <!--*****************  You may also session start******************-->
+  <div class="divYoumayalso">
+    <div class="divtext">
+      <p>YOU MAY ALSO LIKE</p>
+    </div>
+
+
+    <div class="imageslidecontainer">
+
+      <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+
+      <div class="productItemcolumn">
+
+        <div class="mySlides"><a href=""><img src="../assets/image/bag19.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">CLASSIC FAVOURITE</div>
+          <div class="productOnList">On the It-List</div>
+          <div class="productShop">$700</div>
+        </div>
+      </div>
+
+      <div class="productItemcolumn">
+
+        <div class="mySlides"><a href=""><img src="../assets/image/bag18.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">CLASSIC FAVOURITE</div>
+          <div class="productOnList">On the It-List</div>
+          <div class="productShop">$580</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+
+        <div class="mySlides"><a href=""><img src="../assets/image/bag26.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">URBAN GLAMOUR</div>
+          <div class="productOnList">New for her</div>
+          <div class="productShop">$800</div>
+        </div>
+      </div><!-- <img class="mySlides" src="../assets/image/bag27.jpg"> -->
+
+
+      <a class="next" onclick="plusDivs(1)">&#10095;</a>
+    </div>
+
+    <div>
+      <button class="btndesigner">SHOP ALL SOPHIA WEBSTER</button>
+      <label class="lblshopmore">Shop More:</label>
+      <a href="" class="lnkadditional">Shoes</a>
+      <a href="" class="lnkadditional">Sandals</a>
+      <a href="" class="lnkadditional">Mid Heel</a>
+      <a href="" class="lnkadditional">Simple</a>
+    </div>
+  </div>
+  <!--*****************  You may also session end******************-->
+
+
+
+</body>
+

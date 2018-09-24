@@ -1,0 +1,113 @@
+@import "_variables.scss";
+@import "_color.scss";
+.clickable {
+  cursor: pointer;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.padding-btm-15 {
+  padding-bottom: 15px;
+}
+
+.padding-15 {
+  padding: 15px;
+}
+
+.font-s {
+  font-size: $dv-gs-font-size-8
+}
+
+.font-m {
+  font-size: $dv-gs-font-size-16
+}
+
+.font-l {
+  font-size: $dv-gs-font-size-24
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-top-15 {
+  margin-top: 15px;
+}
+
+.gs-header {
+  @extend .gs-highlight;
+  @extend .gs-p-lg;
+}
+
+.gs-subheader {
+  background-color: $dv-gs-theme-color-20;
+  @extend .gs-p-md;
+  color: #333333
+}
+
+.gs-p-sm {
+  font-size: $dv-gs-font-size-sm
+}
+
+.gs-p-md {
+  font-size: $dv-gs-font-size-md
+}
+
+.gs-p-lg {
+  font-size: $dv-gs-font-size-lg
+}
+
+.gs-highlight {
+  background-color: $dv-gs-theme-color-100;
+  color: #ffffff
+}
+
+.gs-highlight:hover {
+  background-color: #ffffff;
+  color: $dv-gs-theme-color-100;
+}
+
+.bordered {
+  border: solid 0.5px #333333;
+}
+
+.gs-theme-40-bordered {
+  border: solid 1px $dv-gs-theme-color-40;
+}
+
+.gs-number-indicator {
+  font-size: $dv-gs-font-size-16;
+  color: #747171
+}
+
+.gs-button-sm {}
+
+.gs-button-md {
+  padding: 10px;
+  width: 100%
+}
+
+.gs-button-lg {}

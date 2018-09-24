@@ -1,0 +1,95 @@
+<body>
+<div class="coverWrap">
+    <div class="contentCvrWrap">
+          <div class="banner">
+                    <div class="slider single-item">
+                        <div>
+                            <div class="bannerImage">
+                                <img src="../assets/image/banner1.jpg">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bannerImage">
+                                <img src="../assets/image/banner2.JPG">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bannerImage">
+                                <img src="../assets/image/banner3.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <div class="homeProductSec">
+            <div class="homeProductLeft">
+                <div class="productItem">
+                    <div class="productImage"><a href=""><img src="../assets/image/img1.jpg"></a></div>
+                    <div class="productDes">
+                        <div class="productName">CLASSIC FAVOURITE</div>
+                        <div class="productOnList">On the It-List</div>
+                        <div class="productShop"><a href="">SHOP NOW</a></div>
+                    </div>
+                </div>
+                <div class="productItem">
+                    <div class="productImage"><a href=""><img src="../assets/image/img3.PNG"></a></div>
+                    <div class="productDes">
+                        <div class="productName">URBAN GLAMOUR</div>
+                        <div class="productOnList">New for her</div>
+                        <div class="productShop"><a href="">SHOP NOW</a></div>
+                    </div>
+                </div>
+                <div class="productItem">
+                    <div class="productImage"><a href=""><img src="../assets/image/img4.PNG"></a></div>
+                    <div class="productDes">
+                        <div class="productName">IN DEMAND</div>
+                        <div class="productOnList">Hot Faves</div>
+                        <div class="productShop"><a href="">SHOP NOW</a></div>
+                    </div>
+                </div>
+                <div class="productItem">
+                    <div class="productImage"><a href=""><img src="../assets/image/img5.PNG"></a></div>
+                    <div class="productDes">
+                        <div class="productName">WARDROBE UPDATES</div>
+                        <div class="productOnList">Style Reports</div>
+                        <div class="productShop"><a href="">SHOP NOW</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="homeProductRight">
+                 <div class="productLogo"><a href=""><img src="../assets/image/Spotlight.png" alt="" height="60" width="60"></a></div>
+                <div class="productAdItem">
+                    <div *ngFor="let m of [1,2,3];let i = index" class="clickable" (click)="searchBrand(i)">
+                        <img [attr.src]="'../assets/image/'+m+'.JPG'" width="100%">
+                       <!-- <img src="../Images/Home/1.JPG" width="100%"> -->
+                      </div>
+                      <!-- <div *ngFor="let m of [1,2,3]" class="clickable">
+                      <img [routerLink]="['/products',brands[m-1]]" [attr.src]="url+'/Images/Home/'+m+'.JPG'" width="100%">
+                      </div> -->
+                      <!-- <div class="productImage"><a href=""><img src="../assets/image/img2.jpg"></a></div>
+                    <div class="productDes">
+                        <div class="productName">NITA SURI</div>
+                        <div class="productDescription">Feed your style with unique shapes and strong colours with these contemporary pieces</div>
+                        <div class="productShop"><a href="">SHOP NOW</a></div>
+                    </div> -->
+                </div>
+                <div class="productAdItem">
+                    <div class="productImage"><a href=""><img src="../assets/image/img6.PNG"></a></div>
+                    <div class="productDes">
+                        <div class="productName">SUMMER DRESSES</div>
+                        <div class="productDescription">Find your one-piece style solution</div>
+                        <div class="productShop"><a href="">SHOP NOW</a></div>
+                    </div>
+                </div>
+                <div class="productAdItem">
+                    <div class="productImage"><a href=""><img src="../assets/image/img7.PNG"></a></div>
+                    <div class="productDes">
+                        <div class="productName">STAY CONNECTED</div>
+                        <div class="productDescription">Receive exclusive events & more <br> WhatsApp "CONNECT ME" to <81160099></div>
+                        <div class="productShop"><a href="">DOWNLOAD APP</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

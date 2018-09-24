@@ -1,0 +1,525 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!--***************** Middle Section start ******************-->
+
+  <!--***************** Middle SectionHeader start ******************-->
+
+  <div class="MainCategory">WHAT'S NEW</div>
+
+  <div class="ItemNumber">
+    <p>75 Results</p>
+  </div>
+
+  <!-- <div class="level3"> -->
+  <div class="dropdown">
+    <select>
+
+      <option value="saab">NEW ARRIVALS</option>
+      <option value="opel">RECOMMENDED</option>
+      <option value="audi">LOW TO HIGH</option>
+      <option value="audi">HIGH TO LOW</option>
+    </select>
+
+
+  </div>
+
+  <div>
+    <app-pagination></app-pagination>
+  </div>
+
+  <!--***************** Top Pagination Start ******************-->
+  <!-- <div class="paginationTop">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+
+
+    <a href="#">&raquo;</a>
+  </div> -->
+  <!--***************** Top Pagination End ******************-->
+
+  <!-- </div> -->
+
+  <!--***************** Middle SectionHeader end ******************-->
+
+  <!--***************** Middle SectionProduct start ******************-->
+
+  <div class="ProductList">
+    <div class="Productlistrow">
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag1.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">CELINE</div>
+          <div class="productOnList">Edie Bag</div>
+          <div class="productShop">$350.00</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <!-- <div class="productImage"><a [routerLink]="['/productdesc']" routerLinkActive="active"><img src="../assets/image/bag28.jpg"></a></div> -->
+
+        <div class="productImage"><a [routerLink]="['/productdesc/', '2']" routerLinkActive="active"><img src="../assets/image/bag28.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">GUCCI</div>
+          <div class="productOnList">The Grind Leather</div>
+          <div class="productShop">$450</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag30.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">LOEWE</div>
+          <div class="productOnList">Hot Faves</div>
+          <div class="productShop">$500</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag19.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">ANTONELLO</div>
+          <div class="productOnList">Bultie Bucket Bag</div>
+          <div class="productShop">$250</div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="Productlistrow">
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag5.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">CLASSIC FAVOURITE</div>
+          <div class="productOnList">On the It-List</div>
+          <div class="productShop">$300</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag26.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">URBAN GLAMOUR</div>
+          <div class="productOnList">New for her</div>
+          <div class="productShop">$450</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag23.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">IN DEMAND</div>
+          <div class="productOnList">Hot Faves</div>
+          <div class="productShop">$600</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag15.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">URBAN GLAMOUR</div>
+          <div class="productOnList">New for her</div>
+          <div class="productShop">$500</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="Productlistrow">
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag27.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">CLASSIC FAVOURITE</div>
+          <div class="productOnList">On the It-List</div>
+          <div class="productShop">$700</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag25.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">URBAN GLAMOUR</div>
+          <div class="productOnList">New for her</div>
+          <div class="productShop">$800</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag31.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">IN DEMAND</div>
+          <div class="productOnList">Hot Faves</div>
+          <div class="productShop">$1500</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag18.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">CLASSIC FAVOURITE</div>
+          <div class="productOnList">On the It-List</div>
+          <div class="productShop">$580</div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="Productlistrow">
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag15.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">CLASSIC FAVOURITE</div>
+          <div class="productOnList">On the It-List</div>
+          <div class="productShop">$700</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag26.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">URBAN GLAMOUR</div>
+          <div class="productOnList">New for her</div>
+          <div class="productShop">$800</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag30.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">IN DEMAND</div>
+          <div class="productOnList">Hot Faves</div>
+          <div class="productShop">$1500</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag28.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">CLASSIC FAVOURITE</div>
+          <div class="productOnList">On the It-List</div>
+          <div class="productShop">$580</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="Productlistrow">
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag5.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">CLASSIC FAVOURITE</div>
+          <div class="productOnList">On the It-List</div>
+          <div class="productShop">$300</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag26.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">URBAN GLAMOUR</div>
+          <div class="productOnList">New for her</div>
+          <div class="productShop">$450</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag23.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">IN DEMAND</div>
+          <div class="productOnList">Hot Faves</div>
+          <div class="productShop">$600</div>
+        </div>
+      </div>
+      <div class="productItemcolumn">
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productImage"><a href=""><img src="../assets/image/bag15.jpg"></a></div>
+        <div class="productDes">
+          <div class="productName">URBAN GLAMOUR</div>
+          <div class="productOnList">New for her</div>
+          <div class="productShop">$500</div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <!--***************** Middle SectionProduct end ******************-->
+
+  <!--***************** Middle Section end ******************-->
+
+  <!--***************** Filter by Category Start ******************-->
+
+
+
+  <div class="FilterbyCategory">
+    <div class="Filtertext">
+      <h3>FILTER:</h3><span>
+        <hr>
+        <button type="button" (click)="uncheckall('0')" class="btnunselectalltop" id="id0">
+          <span class="fa fa-undo"></span>
+        </button></span>
+    </div>
+
+    <div class="Filterset">
+      <!-- <button id="btnCategory" class="collapsible" (click)='categorycollapse()'><span>CATEGORY</span> <span class="glyphicon glyphicon-repeat"></span></button> -->
+      <button id="btnCategory" class="collapsible" (click)='categorycollapse()'><span>CATEGORY</span><span>
+          <button type="button" (click)="uncheckall('1')" class="btnunselectall" id="id1">
+            <span class="fa fa-undo"></span>
+          </button></span></button>
+
+
+      <!-- <button type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-repeat"></span>
+          </button> -->
+
+      <div class="content" id="ContentIdCATEGORY">
+        <fieldset id="fdstLorem">
+
+          <ul>
+            <li><a [routerLink]="['/newin']" routerLinkActive="active" (click)='ContentReplace()'>ACCESSORIES</a></li>
+            <li><a href="">BAGS</a></li>
+            <li><a href="">CLOTHING</a></li>
+            <li><a href="">FASHION JEWELLERY</a></li>
+            <li><a href="">JEWELLERY</a></li>
+            <li><a href="">SHOES</a></li>
+            <li><a href="">WATCHES</a></li>
+          </ul>
+        </fieldset>
+
+      </div>
+
+
+
+      <div class="content" id="ContentSUBCATEGORYID">
+        <fieldset id="fdstLorem">
+          <label class="label">ACCESSORIES</label>
+          <ul>
+            <li> <input class="checkboxes" type="checkbox" id="CB1" name="chkcategory" onclick="showcheckbox('id1')"><label
+                for="CB1">PHILIP LIM</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcategory" onclick="showcheckbox('id1')"><label
+                for="CB1">ADIDAS</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcategory" onclick="showcheckbox('id1')"><label
+                for="CB1">ADIDAS BY RAF NIMPNS</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcategory" onclick="showcheckbox('id1')"><label
+                for="CB1">ADIDAS BY NICK OWENS</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcategory" onclick="showcheckbox('id1')"><label
+                for="CB1">BALLY</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcategory" onclick="showcheckbox('id1')"><label
+                for="CB1">FENDI</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcategory" onclick="showcheckbox('id1')"><label
+                for="CB1">LOEWE</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcategory" onclick="showcheckbox('id1')"><label
+                for="CB1">NIKON</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcategory" onclick="showcheckbox('id1')"><label
+                for="CB1">MULBERRY</label></li>
+          </ul>
+        </fieldset>
+
+      </div>
+
+      <!-- <button id="btnGENDER" class="collapsible" (click)='categorycollapse()'>GENDER</button> -->
+      <button id="btnCategory" class="collapsible" (click)='categorycollapse()'><span>GENDER</span><span>
+          <button type="button" (click)="uncheckall('2')" class="btnunselectall" id="id2">
+            <span class="fa fa-undo"></span>
+          </button></span> </button>
+      <div class="content" id="ContentIdGender">
+        <fieldset id="fdstLorem">
+
+          <ul>
+            <li> <input class="checkboxes" type="checkbox" id="CB1" name="chkgender" onclick="showcheckbox('id2')"><label>WOMEN</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkgender" onclick="showcheckbox('id2')"><label>MEN</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkgender" onclick="showcheckbox('id2')"><label>GIRLS</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkgender" onclick="showcheckbox('id2')"><label>BOYS</label></li>
+
+          </ul>
+        </fieldset>
+      </div>
+      <!-- <h6 class="space">&nbsp;</h6> -->
+      <!-- <button id="btnDESIGNER"  class="collapsible" (click)='categorycollapse()'>DESIGNER</button> -->
+      <button id="btnCategory" class="collapsible" (click)='categorycollapse()'><span>DESIGNER</span><span>
+          <button type="button" (click)="uncheckall('3')" class="btnunselectall" id="id3">
+            <span class="fa fa-undo"></span>
+          </button></span> </button>
+
+      <div class="content">
+        <input type="text" class="searchtextinfilter" id="fname" name="fname" placeholder="Search">
+        <fieldset id="fdstLorem">
+
+          <ul>
+            <li> <input class="checkboxes" type="checkbox" id="CB1" name="chkdesigner" onclick="showcheckbox('id3')"><label
+                for="CB1">PHILIP LIM</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkdesigner" onclick="showcheckbox('id3')"><label
+                for="CB1">ADIDAS</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkdesigner" onclick="showcheckbox('id3')"><label
+                for="CB1">ADIDAS BY RAF NIMPNS</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkdesigner" onclick="showcheckbox('id3')"><label
+                for="CB1">ADIDAS BY NICK OWENS</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkdesigner" onclick="showcheckbox('id3')"><label
+                for="CB1">BALLY</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkdesigner" onclick="showcheckbox('id3')"><label
+                for="CB1">FENDI</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkdesigner" onclick="showcheckbox('id3')"><label
+                for="CB1">LOEWE</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkdesigner" onclick="showcheckbox('id3')"><label
+                for="CB1">NIKON</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkdesigner" onclick="showcheckbox('id3')"><label
+                for="CB1">MULBERRY</label></li>
+
+          </ul>
+        </fieldset>
+      </div>
+
+      <!-- <h6 class="space">&nbsp;</h6> -->
+      <!-- <button  class="collapsible" (click)='categorycollapse()'>CONDITION</button> -->
+      <button id="btnCategory" class="collapsible" (click)='categorycollapse()'><span>CONDITION</span><span>
+          <button type="button" (click)="uncheckall(4)" class="btnunselectall" id="id4">
+            <span class="fa fa-undo"></span>
+          </button></span> </button>
+
+      <div class="content">
+        <input type="text" class="searchtextinfilter" id="fname" name="fname" placeholder="Search">
+        <fieldset id="fdstLorem">
+
+          <ul>
+            <li> <input class="checkboxes" type="checkbox" id="CB1" name="chkcondition" onclick="showcheckbox('id4')"><label
+                for="CB1">PHILIP LIM</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcondition" onclick="showcheckbox('id4')"><label
+                for="CB1">ADIDAS</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcondition" onclick="showcheckbox('id4')"><label
+                for="CB1">ADIDAS BY RAF NIMPNS</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcondition" onclick="showcheckbox('id4')"><label
+                for="CB1">ADIDAS BY NICK OWENS</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcondition" onclick="showcheckbox('id4')"><label
+                for="CB1">BALLY</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcondition" onclick="showcheckbox('id4')"><label
+                for="CB1">FENDI</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcondition" onclick="showcheckbox('id4')"><label
+                for="CB1">LOEWE</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcondition" onclick="showcheckbox('id4')"><label
+                for="CB1">NIKON</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkcondition" onclick="showcheckbox('id4')"><label
+                for="CB1">MULBERRY</label></li>
+
+          </ul>
+        </fieldset>
+      </div>
+
+      <!-- <h6 class="space">&nbsp;</h6> -->
+      <!-- <button class="collapsible" (click)='categorycollapse()'>ATTRIBUTES</button> -->
+      <button id="btnCategory" class="collapsible" (click)='categorycollapse()'><span>ATTRIBUTES</span><span>
+          <button type="button" (click)="uncheckall(5)" class="btnunselectall" id="id5">
+            <span class="fa fa-undo"></span>
+          </button></span> </button>
+      <div class="content">
+        <input type="text" class="searchtextinfilter" id="fname" name="fname" placeholder="Search">
+        <fieldset id="fdstLorem">
+
+          <ul>
+            <li> <input class="checkboxes" type="checkbox" id="CB1" name="chkattributes" onclick="showcheckbox('id5')"><label
+                for="CB1">PHILIP LIM</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkattributes" onclick="showcheckbox('id5')"><label
+                for="CB1">ADIDAS</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkattributes" onclick="showcheckbox('id5')"><label
+                for="CB1"> ADIDAS BY RAF NIMPNS></label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkattributes" onclick="showcheckbox('id5')"><label
+                for="CB1">ADIDAS BY NICK OWENS</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkattributes" onclick="showcheckbox('id5')"><label
+                for="CB1">BALLY</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkattributes" onclick="showcheckbox('id5')"><label
+                for="CB1">FENDI</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkattributes" onclick="showcheckbox('id5')"><label
+                for="CB1">LOEWE</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkattributes" onclick="showcheckbox('id5')"><label
+                for="CB1">NIKON</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkattributes" onclick="showcheckbox('id5')"><label
+                for="CB1">MULBERRY</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkattributes" onclick="showcheckbox('id5')"><label
+                for="CB1">FENDI</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkattributes" onclick="showcheckbox('id5')"><label
+                for="CB1">LOEWE</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkattributes" onclick="showcheckbox('id5')"><label
+                for="CB1">FENDI</label></li>
+            <li><input class="checkboxes" type="checkbox" id="CB1" name="chkattributes" onclick="showcheckbox('id5')"><label
+                for="CB1">LOEWE</label></li>
+
+          </ul>
+        </fieldset>
+      </div>
+    </div>
+
+  </div>
+
+  <!--***************** Filter by Category Start ******************-->
+  <div>
+    <app-pagination></app-pagination>
+  </div>
+  <!--***************** Bottom Pagination Start ******************-->
+  <!-- <div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+
+
+    <a href="#">&raquo;</a>
+  </div> -->
+  <!--***************** Bottom Pagination End ******************-->
+
+
+</body>

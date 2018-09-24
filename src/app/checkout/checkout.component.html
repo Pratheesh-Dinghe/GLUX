@@ -1,0 +1,385 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+
+<body>
+  <div class="Checkoutheading">
+    <h1>CHECKOUT</h1>
+  </div>
+
+  <!--***************** Button continue shopping Start ******************-->
+  <div class="divbtncontinewshoppingtop">
+    <button class="btncontinueshoppingtop">
+      CONTINUE SHOPPING
+    </button>
+  </div>
+  <!--***************** Button continue shopping  end ******************-->
+
+  <!--***************** Shipping and Billing Address Session Start ******************-->
+  <div class="divshipingandbilling">
+    <div class="divShipping">
+      <p>SHIP TO</p>
+      <div class="divtxtshippingaddr">
+
+        <!----------------------------------------------------------------------------------------------------->
+        <form>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Full Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Address</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="address" name="lastname">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <!-- <label for="lname">Address</label> -->
+            </div>
+            <div class="col-75">
+              <input type="text" id="address1" name="lastname">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <!-- <label for="lname">Address</label> -->
+            </div>
+            <div class="col-75">
+              <input type="text" id="address2" name="lastname">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Country</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option class="option" value="Singapure" selected>Singapure</option>
+                <option class="option" value="canada">Canada</option>
+                <option class="option" value="usa">USA</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Postal Code</label>
+            </div>
+            <div class="col-75">
+              <!-- <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> -->
+              <input type="text" id="pstcode" name="postalcode" width="25%" onkeypress="return isNumberKey(event)"
+                maxlength="6">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Contact number</label>
+            </div>
+            <div class="col-75">
+              <!-- <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> -->
+              <input type="text" id="Cntnumber" name="contactnumber" onkeypress="return isNumberKey(event)" maxlength="10">
+            </div>
+          </div>
+
+          <div class="row">
+            <input type="submit" value="ADD ADDRESS">
+            <input type="cancel" value="CANCEL">
+          </div>
+
+        </form>
+
+      </div>
+      <p class="txtchangeshipping"><a href="">Change</a></p>
+
+
+    </div>
+
+    <div class="divBilling">
+      <p>BILL TO</p>
+      <div class="divchksame">
+        <!-- <input type="checkbox" name="c5" class="chksame" onclick="showshippingaddr('divtxtbillingaddr')" ><label>Same as
+          Shipping Address</label> -->
+
+        <input type="checkbox" name="c5" class="chksame" id="chksameID" onclick="FillBilling('divtxtbillingaddr')"><label>Same
+          as Shipping Address</label>
+        <p class="txtbillingchange"><a href="">Change</a></p>
+      </div>
+      <div class="divtxtbillingaddr" id="billingaddrID">
+        <!----------------------------------------------------------------------------------------------------->
+        <form>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Full Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname1" name="firstname">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Address</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="address3" name="lastname">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <!-- <label for="lname">Address</label> -->
+            </div>
+            <div class="col-75">
+              <input type="text" id="address4" name="lastname">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <!-- <label for="lname">Address</label> -->
+            </div>
+            <div class="col-75">
+              <input type="text" id="address5" name="lastname">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Country</label>
+            </div>
+            <div class="col-75">
+              <select id="country1" name="country">
+                <option class="option" value="australia" selected>Singapure</option>
+                <option class="option" value="canada">Canada</option>
+                <option class="option" value="usa">USA</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Postal Code</label>
+            </div>
+            <div class="col-75">
+              <!-- <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> -->
+              <input type="text" id="pstcode1" name="postalcode" width="25%" onkeypress="return isNumberKey(event)"
+                maxlength="6">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Contact number</label>
+            </div>
+            <div class="col-75">
+              <!-- <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> -->
+              <input type="text" id="Cntnumber1" name="contactnumber" onkeypress="return isNumberKey(event)" maxlength="10">
+            </div>
+          </div>
+
+          <div class="row">
+            <input type="submit" value="ADD ADDRESS">
+            <input type="cancel" value="CANCEL">
+          </div>
+        </form>
+        <!------------------------------------------------------------------------------------------------------>
+      </div>
+
+    </div>
+  </div>
+  <!--***************** Shipping and Billing Address Session End ******************-->
+
+  <!--***************** Paymentmode Start ******************-->
+  <div class="divpaymentmode">
+    <p>PAYMENT</p>
+    <form>
+      <input type="radio" class="radio" name="Paymentmode" value="credit" checked><label>Credit/Debit Card</label> <br>
+      <input type="radio" class="radio" name="Paymentmode" value="paypal"><label>Paypal</label><br>
+
+    </form>
+  </div>
+
+  <!--***************** Paymentmode END  ******************-->
+
+
+  <div class="divsummarytxt">
+    <p class="txtsummary">SUMMARY</p>
+  </div>
+  <!--***************** Summary of GSTOCK ITEMS End ******************-->
+  <div class="divGstockitems">
+    <div class="Individualitems">
+      <div class="productItemcolumn">
+
+        <div class="productImage"><a href=""><img src="../assets/image/headphone.png"></a></div>
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="productDes">
+          <div class="productName">SONY MDR-Z1R</div>
+          <div class="productOnList">Focal Clear Headset</div>
+          <div class="prodGpoints">G-Points-2</div>
+          <div class="prodQuantity">Qty:1 | Non-Returnable </div>
+        </div>
+      </div>
+
+
+
+      <div class="txtamount">
+        <p>SGD 50.00</p>
+      </div>
+
+    </div>
+
+
+    <div class="GstockCommondetails">
+      <div class="chkboxpromocode">
+        <input type="checkbox" name="c1"><label>Promo Codes</label>
+      </div>
+
+      <div class="divshippingfee">
+        <p>SHIPPING FEE</p>
+        <select class="drpdwnshippingtype" onchange='showshippingtype(this.value)'>
+          <option value="Gstockregular">SGD5.00</option>
+          <option value="Gstockexpress">SGD7.00</option>
+        </select>
+      </div>
+
+      <div class="txtRegularShippingDescription">
+        <p class="regular" id="regID" name="regular"><input type="text" class="txtshipping" id="txt" value="Regular (Delivered within 2-3 days)"
+            disabled></p>
+      </div>
+
+      <div class="divsubtotal">
+        <p>SUBTOTAL</p>
+        <input type="text" class="txtsubtotal" id="txt" value="SGD10.00" disabled>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="divGstockSplInstruction">
+    <p>Special Instructions(s):</p>
+    <textarea id="subject" name="splinstruction" placeholder="Anything you want to request to the merchant and delivery driver?"></textarea>
+  </div>
+
+  <!--***************** Summary of GSTOCK ITEMS End ******************-->
+
+  <!--***************** Summary of GLUX ITEMS Start ******************-->
+
+  <div class="divGLUXitems">
+    <div class="GLUXIndividualitems">
+      <div class="GLUXproductItemcolumn">
+
+        <div class="divGLUXproductImage"><a href=""><img src="../assets/image/bag23.jpg"></a></div>
+        <button type="button" class="btnstar">
+          <span class="glyphicon glyphicon-star-empty gray"></span>
+        </button>
+        <div class="GLUXproductDes">
+          <div class="productName">SONY MDR-Z1R</div>
+          <div class="productOnList">Focal Clear Headset</div>
+          <div class="prodGpoints">G-Points-2</div>
+        </div>
+      </div>
+
+
+
+      <div class="Gluxtxtamount">
+        <p>SGD 2130.00</p>
+      </div>
+    </div>
+
+
+    <div class="GLUXCommondetails">
+
+      <div class="GLUXchkboxGstockMembership">
+        <input type="checkbox" name="c3"><label>GSTOCK membership 10%</label>
+        <div class="txtmembershipDisc">
+          <p>-SGD 213.00</p>
+        </div>
+      </div>
+
+      <div class="GLUXchkboxGstockPurchased">
+        <input type="checkbox" name="c4"><label>GSTOCK purchased 10%</label>
+        <div class="txtpurchaseDisc">
+          <p>-SGD 191.70</p>
+        </div>
+      </div>
+
+      <div class="GLUXchkboxpromocode">
+        <input type="checkbox" name="c2"><label>Promo Codes</label>
+      </div>
+
+      <div class="GLUXdivshippingfee">
+        <p>SHIPPING FEE</p>
+        <select class="GLUXdrpdwnshippingtype" onchange='showshippingtype(this.value)'>
+          <option value="Gluxregular">SGD5.00</option>
+          <option value="Gluxexpress">SGD7.00</option>
+        </select>
+
+      </div>
+      <div class="GLUXtxtRegularShippingDescription">
+
+        <p class="regular" id="GluxregID" name="regular"><input type="text" class="GLUXtxtshipping" id="txtID" value="Regular (Delivered within 2-3 days)"
+            disabled></p>
+
+      </div>
+      <div class="GLUXdivsubtotal">
+        <p>SUBTOTAL</p>
+        <input type="text" class="GLUXtxtsubtotal" id="txt" value="SGD1732.30" disabled>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="divGLUXSplInstruction">
+    <p>Special Instructions(s):</p>
+    <textarea id="subject" name="splinstruction" placeholder="Anything you want to request to the merchant and delivery driver?"></textarea>
+  </div>
+  <!--***************** Summary of GLUX ITEMS END ******************-->
+  <!--***************** Summary of items  end ******************-->
+
+  <!--***************** Total of GSTOCK and GLUX Start ******************-->
+  <div class="divGrandTotal">
+    <!-- <div class="linetotal"><hr></div> -->
+
+    <div class="GLUXdivgrandtotal">
+      <p>TOTAL(2 Items)</p>
+      <input type="text" class="GLUXtxtgrandtotal" id="txt" value="SGD1742.00" disabled>
+    </div>
+    <div class="GLUXdivGpoints">
+      <p>TOTAL G-POINTS EARNED 22</p>
+
+    </div>
+    <div class="divbtnsinBottom">
+      <button class="btnContinueShoppingBottom">
+        CONTINUE SHOPPING
+      </button>
+
+      <button class="btnproceedtocheckout" [routerLink]="['/checkout/', '2']">
+        CONFIRM AND PAY
+      </button>
+    </div>
+  </div>
+  <!--***************** Total of GSTOCK and GLUX End  ******************-->
+
+</body>

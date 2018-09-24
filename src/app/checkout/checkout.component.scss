@@ -1,0 +1,873 @@
+.Checkoutheading {
+  height: 150px;
+  width: 80%;
+  background-color: #929292;
+  margin: auto;
+  margin-top: -10px;
+}
+
+.Checkoutheading h1 {
+  position: relative;
+  top: 55px;
+  left: 35px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 24px;
+  font-family: "Helvetica";
+}
+
+/******************* continue shopping button start *********************/
+
+.divbtncontinewshoppingtop {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 220px;
+}
+
+.btncontinueshoppingtop {
+  background-color: white;
+  color: black;
+  border: 1px solid lightgray;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "Helvetica";
+  text-align: center;
+  font-weight: 600;
+  padding: 10px 10px 10px 10px;
+}
+
+/******************* continue shopping button end *********************/
+
+/******************* Shipping and Billing Address Session Start ******************/
+
+.divShipping p {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Helvetica";
+  text-align: left;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.divShipping {
+  border-right: 1px solid lightgray;
+  width: 40%;
+  margin: auto;
+  height: 330px;
+  margin-left: 220px;
+  margin-right: -50px;
+}
+
+.divtxtshippingaddr {
+  width: 80%;
+  margin-right: 150px;
+  margin-left: 250px;
+  margin-top: 10px;
+}
+
+.divtxtshippingaddr p {
+  font-family: "lucida bright";
+  font-size: 10px;
+  line-height: 13px;
+  text-align: left;
+  margin-left: 150px;
+  margin-top: inherit;
+  position: relative;
+  top: -25px;
+}
+
+.txtchangeshipping {
+  margin-left: 570px;
+  position: relative;
+  top: -320px;
+}
+
+.txtchangeshipping a {
+  font-family: "lucida bright";
+  font-size: 12px;
+  line-height: 13px;
+  color: silver;
+}
+
+.divtxtshippingaddr label {
+  font-family: "lucida bright";
+  font-size: 12px;
+  line-height: 13px;
+  color: black;
+  font-weight: normal;
+}
+
+.divtxtshippingaddr input {
+  border: 1px solid lightgrey;
+}
+
+/************************************************************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+.divtxtshippingaddr input[type="text"],
+textarea {
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  resize: vertical;
+  height: 10px;
+  font-family: "lucida bright";
+  font-size: 10px;
+}
+
+.divtxtbillingaddr input[type="text"] {
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  resize: vertical;
+  height: 10px;
+  font-family: "lucida bright";
+  font-size: 10px;
+}
+
+
+select {
+  width: 25%;
+  height: 25px;
+  font-family: "lucida bright";
+  font-size: 10px;
+}
+
+select option {
+  font-family: "lucida bright";
+  font-size: 10px;
+}
+
+label {
+  padding: 5px 5px 5px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  float: right;
+  font-family: "Helvetica";
+  font-size: 12px;
+  width: 20%;
+  font-weight: 600;
+}
+
+input[type="cancel"] {
+  background-color: white;
+  color: black;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid lightgrey;
+  border-radius: 1px;
+  cursor: pointer;
+  float: right;
+  font-family: "Helvetica";
+  font-size: 12px;
+  width: 20%;
+  text-align: center;
+  float: right;
+  margin-left: 88px;
+  font-weight: 600;
+}
+
+input[type="submit"]:hover {
+  /* background-color: #45a049; */
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.country {
+  font-size: 12px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-25 label:after {
+  color: #e32;
+  content: " *";
+  display: inline;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/************************************************************************************/
+
+.divBilling {
+  width: 40%;
+  height: 170px;
+  margin-left: 910px;
+  position: absolute;
+  margin-top: -330px;
+}
+
+.divBilling p {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Helvetica";
+  text-align: left;
+  font-weight: 600;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.divchksame label {
+  font-family: "lucida bright";
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 1px;
+  list-style-type: none;
+  text-align: left;
+  background-color: white;
+  padding-left: 15px;
+  text-indent: -10px;
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+
+.chksame {
+  font-family: "lucida bright";
+  /* font-size: 20px; */
+  margin-left: 130px;
+  margin-top: -30px;
+  font-weight: normal;
+  width: 13px;
+  height: 13px;
+}
+
+.divchksame {
+  margin-top: -30px;
+}
+
+.divtxtbillingaddr p {
+  font-family: "lucida bright";
+  font-size: 10px;
+  line-height: 13px;
+  text-align: left;
+  margin-left: 150px;
+  margin-top: inherit;
+  position: relative;
+  font-weight: normal;
+}
+
+.divtxtbillingaddr {
+  margin-left: 150px;
+  margin-top: -35px;
+  font-family: "lucida bright";
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: normal;
+}
+
+.divtxtbillingaddr label {
+  font-family: "lucida bright";
+  font-size: 12px;
+  line-height: 13px;
+  color: black;
+  font-weight: normal;
+}
+
+.txtbillingchange {
+  margin-left: 500px;
+  position: relative;
+  top: -35px;
+}
+
+.txtbillingchange a {
+  font-family: "lucida bright";
+  font-size: 12px;
+  line-height: 13px;
+  color: silver;
+}
+
+@media screen and (max-width: 600px) {
+
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.divshipingandbilling:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+
+  .divBilling,
+  .divShipping {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/******************* Shipping and Billing Address Session End *********************/
+
+/******************* Payment Type Start *********************/
+
+.divpaymentmode {
+  position: relative;
+  margin: auto;
+  margin-left: 230px;
+  margin-top: 50px;
+}
+
+.radio {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 2px 0;
+  margin-left: 230px;
+}
+
+.divpaymentmode label {
+  font-family: "lucida bright";
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: normal;
+}
+
+.divpaymentmode p {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Helvetica";
+  text-align: left;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/******************* Payment Type End *********************/
+
+.divsummarytxt {
+  font-size: 15px;
+  line-height: 18px;
+  font-family: "Helvetica";
+  text-align: center;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+/******************* GSTOCK Product  session start **********************/
+
+.divGstockitems {
+  border: 1px solid lightgray;
+  width: 75%;
+  margin: auto;
+  margin-top: -25px;
+  height: 190px;
+}
+
+.divproductImage,
+productItemcolumn {
+  width: 50%;
+}
+
+.productName {
+  font-family: "lucida bright";
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.productOnList {
+  font-family: "lucida bright";
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.productDes {
+  margin-left: 150px;
+  margin-top: -120px;
+  width: 30%;
+}
+
+.btnstar {
+  background-color: white;
+  font-size: 20px;
+  border: 0px solid #e7e7e7;
+  margin-left: 60px;
+}
+
+.prodGpoints {
+  font-family: "lucida bright";
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.prodQuantity {
+  font-family: "lucida bright";
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.dropdownStock {
+  margin-left: 550px;
+  margin-top: -50px;
+  font-family: "lucida bright";
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.txtamount {
+  float: right;
+  margin-right: 110px;
+  margin-top: -40px;
+  font-family: "lucida bright";
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: -30px;
+}
+
+.dropdownStock:hover {
+  cursor: pointer;
+}
+
+/******************* GSTOCK Common Total and Shipping   session start **********************/
+
+.chkboxpromocode {
+  float: right;
+  margin-right: 230px;
+  font-family: "lucida bright";
+  font-size: 14px;
+  line-height: 12px;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.divshippingfee {
+  float: right;
+  margin-right: -100px;
+  font-family: "lucida bright";
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 50px;
+}
+
+.drpdwnshippingtype {
+  float: right;
+  margin-right: -150px;
+  font-family: "lucida bright";
+  font-size: 12px;
+  margin-top: -30px;
+  width: 100%;
+}
+
+.chkboxpromocode,
+label {
+  list-style-type: none;
+  text-align: left;
+  font-size: 12px;
+  font-weight: inherit;
+  background-color: white;
+  padding-left: 15px;
+  text-indent: -10px;
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+
+.c1 label {
+  color: black;
+  margin-left: -20px;
+}
+
+.txtRegularShippingDescription {
+  float: right;
+  margin-right: -270px;
+  margin-top: 75px;
+  font-family: "lucida bright";
+  font-size: 12px;
+  line-height: 12px;
+  position: relative;
+}
+
+.txtshipping {
+  border: none;
+  width: 250px;
+
+  background-color: white;
+}
+
+.divsubtotal {
+  float: right;
+  margin-right: -95px;
+  margin-top: 100px;
+  font-family: "lucida bright";
+  font-size: 12px;
+  line-height: 12px;
+  background-color: white;
+  font-weight: bold;
+}
+
+.txtsubtotal {
+  float: right;
+  margin-right: -180px;
+  margin-top: -25px;
+  font-family: "lucida bright";
+  font-size: inherit;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  width: 125px;
+}
+
+.GstockCommondetails {
+  float: right;
+  margin-right: -5px;
+  margin-top: -30px;
+}
+
+.divGstockSplInstruction {
+  border: 1px solid lightgray;
+  width: 75%;
+  margin: auto;
+
+  height: 120px;
+
+}
+
+.divGstockSplInstruction p {
+  font-family: "lucida bright";
+  font-size: 12px;
+  font-weight: 600px;
+}
+
+.divGstockSplInstruction textarea {
+  margin-left: 120px;
+  height: 80px;
+  width: 80%;
+}
+
+/******************* GSTOCK Common Total and Shipping   session end **********************/
+
+/******************* GSTOCK Product  session END **********************/
+/******************* GLUX Product  session START *********************/
+.divGLUXitems {
+  border: 1px solid lightgray;
+  width: 75%;
+  margin: auto;
+  margin-top: 10px;
+  height: 270px;
+
+}
+
+
+.GLUXproductDes {
+  margin-left: 150px;
+  margin-top: -120px;
+  width: 30%;
+}
+
+.dropdownGLUXStock {
+  margin-left: 550px;
+  margin-top: -50px;
+  font-family: 'lucida bright';
+  font-size: 12px;
+  line-height: 20px;
+
+}
+
+.Gluxtxtamount {
+  float: right;
+  margin-right: 110px;
+  margin-top: -100px;
+  font-family: "lucida bright";
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: -30px;
+}
+
+/******************* Glux Product  session end **********************/
+
+/******************* GLUX Common Total and Shipping   session start **********************/
+.GLUXchkboxGstockMembership {
+  font-family: 'lucida bright';
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.GLUXchkboxGstockPurchased {
+  font-family: 'lucida bright';
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.GLUXchkboxpromocode {
+
+  font-family: 'lucida bright';
+  font-size: 12px;
+  text-decoration: underline
+}
+
+.txtmembershipDisc {
+  float: right;
+  margin-right: -120px;
+  margin-top: 3px;
+  font-family: 'lucida bright';
+  font-size: 12px;
+  line-height: 12px;
+  text-align: right;
+}
+
+.txtpurchaseDisc {
+  float: right;
+  margin-right: -120px;
+  margin-top: 5px;
+  font-family: 'lucida bright';
+  font-size: 12px;
+  line-height: 12px;
+  text-align: right;
+}
+
+
+.c2 label {
+  color: black;
+  margin-left: -20px;
+
+}
+
+.GLUXdivshippingfee {
+  float: right;
+  margin-right: 100px;
+  font-family: 'lucida bright';
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 10px;
+  width: 150px;
+}
+
+.GLUXdrpdwnshippingtype {
+  float: right;
+  margin-right: -230px;
+  font-family: 'lucida bright';
+  font-size: 12px;
+  margin-top: -30px;
+}
+
+.GLUXtxtRegularShippingDescription {
+  float: right;
+  margin-right: -325px;
+  margin-top: 30px;
+  font-family: 'lucida bright';
+  font-size: 12px;
+  line-height: 12px;
+  position: relative;
+
+}
+
+.GLUXtxtshipping {
+  border: none;
+  width: 250px;
+  background-color: white;
+}
+
+.GLUXdivsubtotal {
+  float: right;
+  margin-right: -95px;
+  margin-top: 50px;
+  font-family: 'lucida bright';
+  font-size: 12px;
+  line-height: 12px;
+  background-color: white;
+  font-weight: bold;
+}
+
+.GLUXtxtsubtotal {
+  float: right;
+  margin-right: -255px;
+  margin-top: -20px;
+  font-family: 'lucida bright';
+  font-size: inherit;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  width: 125px;
+
+
+}
+
+.GLUXCommondetails {
+  float: right;
+  margin-right: 150px;
+  margin-top: -10px;
+}
+
+.divGLUXSplInstruction {
+  border: 1px solid lightgray;
+  width: 75%;
+  margin: auto;
+
+  height: 120px;
+
+}
+
+.divGLUXSplInstruction p {
+  font-family: "lucida bright";
+  font-size: 12px;
+  font-weight: 600px;
+}
+
+.divGLUXSplInstruction textarea {
+  margin-left: 120px;
+  height: 80px;
+  width: 80%;
+}
+
+
+/******************* GLUX Common Total and Shipping   session end **********************/
+
+
+/******************* Grand Total of GSTOCK and GLUX Start **********************/
+
+.divGrandTotal {
+  width: 75%;
+
+  height: 150px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.linetotal {
+  width: 20%;
+  float: right;
+  margin-right: 215px;
+  color: gray;
+  margin-top: 10px;
+  /* background-color:lightgray; */
+  height: 1px;
+  margin-top: 20px;
+
+
+}
+
+.GLUXdivgrandtotal {
+  float: right;
+  margin-right: 350px;
+  margin-top: 50px;
+  font-family: 'lucida bright';
+  font-size: 13px;
+  line-height: 12px;
+  background-color: white;
+  font-weight: bold;
+
+}
+
+.GLUXtxtgrandtotal {
+  float: right;
+  margin-right: -255px;
+  margin-top: -20px;
+  font-family: 'lucida bright';
+  font-size: inherit;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  width: 125px;
+
+
+}
+
+.GLUXdivGpoints {
+  float: right;
+  margin-right: -195px;
+  margin-top: 75px;
+  font-family: 'lucida bright';
+  font-size: 13px;
+  line-height: 12px;
+  background-color: white;
+  font-weight: bold;
+}
+
+
+.btnContinueShoppingBottom {
+  background-color: white;
+  color: black;
+  border: 1px solid lightgray;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: 'Helvetica';
+  text-align: center;
+  font-weight: 600;
+  padding: 10px 10px 10px 10px;
+  /* margin-top:100px; */
+  float: left;
+  /* margin-left:0px; */
+}
+
+.btnproceedtocheckout {
+  background-color: black;
+  color: white;
+
+  font-size: 13px;
+  line-height: 18px;
+  font-family: 'Helvetica';
+  text-align: center;
+  font-weight: 600;
+  padding: 10px 10px 10px 10px;
+  /* margin-top:70px; */
+  float: right;
+  margin-right: -185px;
+  ;
+  /* margin-right:0px; */
+  border: none;
+}
+
+.divbtnsinBottom {
+  width: 100%;
+  margin: auto;
+  height: 50px;
+
+  top: 100px;
+  position: relative;
+}
+
+
+/******************* Grand Total of GSTOCK and GLUX End **********************/

@@ -1,0 +1,158 @@
+<body>
+
+    <!--***************** header start ******************-->
+    <header>
+      <div class="headerTop">
+        <div class="headerLeft">
+            <a href=""><img src="../assets/image/icon5.svg" height="15" width="15">Singapore, S$ SGD | English</a>
+        </div>
+        <div class="logo">
+            <a href=""><img src="../assets/image/logo.svg"></a>
+        </div>
+        <div class="headerRight">
+          <div class="headerIconDiv">
+            <div class="headerIcon"><a [routerLink]="['/shoppingbag/', '2']" routerLinkActive="active"><img src="../assets/image/icon2.svg"
+                  height="25" width="25"></a></div>
+            <div class="headerIcon"><a [routerLink]="['/signin/', '2']" routerLinkActive="active">Sign In</a></div>
+            <div class="headerIcon">Register</div>
+          </div>
+            <!-- <div class="headerLanguage"><img src="../assets/image/icon3.png"> English</div> -->
+        </div>
+      </div>
+                  <!-- <div class="headerMenu"> -->
+                      <!-- <li class="dropdown">
+                        <a  [routerLink]="['/newin']" routerLinkActive="active" class="dropbtn">WHAT'S NEW</a>
+                        <div class="dropdown-content" >
+                            <h6 >CATEGORIES</h6>
+                              <tr *ngFor="let c of categoryDisplay">
+                                <td>
+                                <a href="">{{c.name}}</a>
+                              </td>
+                              </tr>
+                              </div>
+                        </li>
+                  <!-- </div> -->
+                        <!-- <li class="dropdown">
+                        <a  [routerLink]="['/newin']" routerLinkActive="active" class="dropbtn">WOMEN</a>
+                        <div class="dropdown-content" >
+                            <h6 >CATEGORIES</h6>
+                              <tr *ngFor="let c of categoryDisplay">
+                                <td>
+                                <a href="">{{c.name}}</a>
+                              </td>
+                              </tr>
+                        </div>
+                      </li> -->
+
+                        <!-- <li class="dropdown">
+                         <a  [routerLink]="['/newin']" routerLinkActive="active" class="dropbtn">MEN</a>
+                        <div class="dropdown-content" >
+                            <h6 >CATEGORIES</h6>
+                              <tr *ngFor="let c of categoryDisplay">
+                                <td>
+                                <a href="">{{c.name}}</a>
+                              </td>
+                              </tr>
+                              </div>
+                      </li> -->
+
+                       <!-- <li class="dropdown">
+                         <a  [routerLink]="['/newin']" routerLinkActive="active" class="dropbtn">SALE</a>
+                        <div class="dropdown-content" >
+                            <h6 >CATEGORIES</h6>
+                              <tr *ngFor="let c of categoryDisplay">
+                                <td>
+                                <a href="">{{c.name}}</a>
+                              </td>
+                              </tr>
+                              </div>
+                      </li> -->
+
+                        <!-- <li class="dropdown">
+                         <a  [routerLink]="['/newin']" routerLinkActive="active" class="dropbtn">SEARCH</a>
+                        <div class="dropdown-content" >
+                            <h6 >CATEGORIES</h6>
+                              <tr *ngFor="let c of categoryDisplay">
+                                <td>
+                                <a href="">{{c.name}}</a>
+                              </td>
+                              </tr>
+                              </div>
+                      </li>  -->
+
+<!--
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                          <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                          </div>
+                        </li>
+                      </ul> -->
+
+                  </header>
+                <div class ="headerMenu" >
+                  <li class="dropdown">
+                      <a  [routerLink]="['/newin']" routerLinkActive="active" class="dropbtn"  >WHAT'S NEW</a>
+                      <div class="dropdown-content" >
+                          <h6 >CATEGORIES</h6>
+                          <tr *ngFor="let c of categoryDisplay">
+                              <td>
+                              <a href="">{{c.name}}</a>
+                            </td>
+                            </tr>
+                            </div>
+                      </li>
+                      <li class="dropdown">
+                          <a  [routerLink]="['/newin']" routerLinkActive="active" class="dropbtn">WOMEN</a>
+                          <div class="dropdown-content" >
+                              <h6 >CATEGORIES</h6>
+                              <tr *ngFor="let c of categoryDisplay">
+                                  <td>
+                                  <a href="">{{c.name}}</a>
+                                </td>
+                                </tr>
+                                </div>
+                          </li>
+
+                          <li class="dropdown">
+                              <a  [routerLink]="['/newin']" routerLinkActive="active" class="dropbtn">MEN</a>
+                              <div class="dropdown-content" >
+                                  <h6 >CATEGORIES</h6>
+                                  <tr *ngFor="let c of categoryDisplay">
+                                      <td>
+                                      <a href="">{{c.name}}</a>
+                                    </td>
+                                    </tr>
+                                    </div>
+                              </li>
+
+                              <li class="dropdown">
+                                  <a  [routerLink]="['/newin']" routerLinkActive="active" class="dropbtn">SALE</a>
+                                  <div class="dropdown-content" >
+                                      <h6 >CATEGORIES</h6>
+                                      <tr *ngFor="let c of categoryDisplay">
+                                          <td>
+                                          <a href="">{{c.name}}</a>
+                                        </td>
+                                        </tr>
+                                        </div>
+                                  </li>
+                              <li class="dropdown">
+                                  <a  [routerLink]="['/newin']" routerLinkActive="active" class="dropbtn">SEARCH</a>
+                                  <div class="dropdown-content" >
+                                      <h6 >CATEGORIES</h6>
+                                      <tr *ngFor="let c of categoryDisplay">
+                                          <td>
+                                          <a href="">{{c.name}}</a>
+                                        </td>
+                                        </tr>
+                                        </div>
+                                  </li>
+                      </div>
+                      <div class="Line"></div>
+</body>

@@ -1,9 +1,19 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build ---prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
-
+const apiUrl = 'http://localhost:3002';
+const productUrl = `${apiUrl}/product`;
+const uiOptionsUrl = `${productUrl}/ui`;
+const floorUrl = `${uiOptionsUrl}/floor`;
+const homeUrl = `${uiOptionsUrl}/home`;
+const imageUrl = `${uiOptionsUrl}/floor`;
+const paypalToken = 'AbPuSSYRdEc21DvHLVuUAKCgY2mBKvlA_Qel3mdJz541fx3230NJG50tvF6w5RHn-Ul7aA3NV5damDh-';
 export const environment = {
-  production: false
+  production: false,
+  apiUrl,
+  homeUrl,
+  productUrl,
+  uiOptionsUrl,
+  floorUrl,
+  paypalToken
+  // apiUrl: 'http://54.254.213.149/buyer.gstock  CLIENT REFERRAL--'
 };
 
 /*

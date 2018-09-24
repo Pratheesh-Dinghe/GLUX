@@ -1,0 +1,19 @@
+<div class="dv-gs-container" (mouseover)="hovered=true" (mouseout)="hovered=false" [routerLink]="['/product/'+product._id]" >
+  <div class="main-image-product-container" >
+    <img [src]="imgUrl" />
+    <a class="zoom-in-icon" (click)="outputImgUrl($event)">
+        <i class="fa fa-search-plus"></i>
+      </a>
+  </div>
+  <div class="product-info">
+    <p>{{productName}}</p>
+    <span class="pull-left price">${{discount_price|number: '1.2-2'}}</span>
+    <span *ngIf="discount_price !==price" class="pull-left price crossed">$ {{price|number: '1.2-2'}}</span>
+    <div class="pull-right price" style="margin-left: 0;">
+      <a href="#">
+        <i class="fa fa-truck"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
