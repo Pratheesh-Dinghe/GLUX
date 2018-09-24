@@ -13,7 +13,6 @@ export class CheckoutComponent implements OnInit {
 
   ngOnInit() {}
   showshippingaddr() {
-    // tslint:disable-next-line:no-unused-expression
     new showshippingaddr();
   }
 
